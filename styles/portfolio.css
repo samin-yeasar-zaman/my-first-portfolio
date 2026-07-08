@@ -7,32 +7,66 @@
 body{
      background-color:silver;
 }
+
 /*shared-style*/
 .font-open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
 }
+
 .logo h2{
      font-size: 45px;
      font-weight: 900;
 }
+
 .color-cyan{
      color: darkcyan;
 }
+
 /* main style */
 header{
      background-color: #FFF8F3;
+     background: url("../images/developer.png"), url("../images/header_bg.png"),#FFF8F3;
+     background-position: top left,bottom right;
+     background-repeat: no-repeat;
      padding-top: 50px;
 }
+
 .btn{
-     background-color: crimson;
+     background-color: rgb(2, 174, 174);
      border:none;
      padding: 18px 35px;
      border-radius: 7px;
      font-size: 20px;
      font-weight: bold;
      color: white;
+     cursor: pointer;
+
+     transition: transform 0.3s ease,
+                 background-color 0.3s ease;
 }
+
+.btn:hover{
+     background-color:slategray;
+     transform: scale(1.08);
+}
+
+.section-heading{
+     max-width: 827px;
+     text-align: center;
+}
+.section-heading h2{
+     font-size: 35px;
+     margin-bottom: 30px;
+}
+.section-heading p{
+     font: size 18px;
+     margin-bottom: 30px;
+     line-height: 30px;
+     color: #757575;
+
+}
+
 nav{
      width: 71%;
      max-width: 1140;
@@ -41,17 +75,72 @@ nav{
      display:flex;
      justify-content: space-between;
      align-items: center;
-
 }
+
 nav .menu{
      display: flex;
      list-style-type: none;
      gap: 51px;
      align-items: center;
-
 }
+
 nav .menu a{
      font-size: 20px;
      color:#474747;
      text-decoration: none;
+}  
+
+#banner{
+     /* border: 1px solid red; */
+     margin: 47px 38px 0 200px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+#banner-content{
+     max-width: 585px;
+}
+
+#banner .banner-content h2{
+     font-size: 45px;
+     font-weight: 600;
+     color: #474747;
+     margin-bottom: 5px;
+}
+
+#banner .banner-content h1{
+     font-size: 60px;
+     font-weight: bold;
+     color: #181818;
+     margin-bottom: 20px;
+}
+
+#banner .banner-content p{
+     font-size: 18px;
+     color: #757575;
+     line-height: 30px;
+     margin-bottom: 30px;
+}
+
+#about{
+     padding-top: 130px;
+}
+
+#about .about-container{
+     width: 71%;
+     max-width: 1140px;
+     margin: 0 auto;
+     text-align: center;
+     background-color: #FFF8F3;
+     padding: 131px 156px;
+}
+#about .about-container .about-info{
+     display: flex;
+     justify-content: space-between;
+}
+.about-info .info-card p{
+     font: size 20px;
+     line-height: 30px;
+     color: #757575;
 }
